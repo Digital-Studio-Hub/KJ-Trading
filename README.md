@@ -39,3 +39,16 @@ npx --yes serve .
 ## Deploy
 
 GitHub Pages is enabled on `main` (root). Custom domain is set in `CNAME` to `kjtradeversatile.co.za`.
+
+Live preview: https://digital-studio-hub.github.io/KJ-Trading/
+
+### Cloudflare DNS (fixes Error 525)
+
+The domain is already on Cloudflare (`brian.ns.cloudflare.com` / `jule.ns.cloudflare.com`). Point the apex at GitHub Pages and set SSL to **Full**:
+
+| Type | Name | Content | Proxy |
+| --- | --- | --- | --- |
+| CNAME | `@` | `digital-studio-hub.github.io` | DNS only until GitHub issues the certificate, then Proxied |
+| CNAME | `www` | `digital-studio-hub.github.io` | Same |
+
+Alternatively use GitHub Pages A records on `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
