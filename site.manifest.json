@@ -1,0 +1,24 @@
+{
+  "files": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "gallery.html",
+    "contact.html",
+    "styles.css",
+    "script.js"
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "title": "KJTRADING Pty Ltd for all gate automation, CCTV and alarm sy",
+      "page_key": "home",
+      "sections": []
+    }
+  ],
+  "build_mode": "open_static",
+  "open_static": true,
+  "workspace_id": "e157a7cb-ff4f-4f2f-a697-ed3d6fe95551",
+  "business_name": "KJTRADING Pty Ltd for all gate automation, CCTV and alarm sy",
+  "schema_version": "1.0"
+}
